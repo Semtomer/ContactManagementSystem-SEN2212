@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Group Title -->
+    <TextView
+        android:id="@+id/groupTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Group Items -->
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="473dp"
+        android:layout_below="@id/groupTitleTextView"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <!-- Family Group -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:onClick="onFamilyClick"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/familyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Family"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- Acquaintance Group -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:onClick="onAcquaintanceClick"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/acquaintanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Acquaintance"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- Colleague Group -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:onClick="onColleagueClick"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/colleagueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Colleague"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- Friend Group -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:onClick="onFriendClick"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/friendTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Friend"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <!-- Other layout components remain unchanged -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupTitleTextView"
+            android:layout_centerHorizontal="true">
+
+            <!-- TextView to display message -->
+            <TextView
+                android:id="@+id/messageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
